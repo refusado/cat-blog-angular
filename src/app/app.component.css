@@ -1,0 +1,21 @@
+header, main {
+  background-color: #fbfbf9;
+  max-width: min(1440px, 100vw);
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+aside {
+  width: 15%;
+  display: inline-block;
+}
+
+#page-content {
+  width: 85%;
+  margin-right: 40px;
+}

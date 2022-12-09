@@ -1,0 +1,28 @@
+.card-cover__container {
+  padding: 20px;
+}
+
+.card-cover__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  height: min(330px, 25vw);
+  overflow: hidden;
+}
+
+.card-cover__first-image {
+  padding: 4px;
+  background-color: red;
+  background: url('/assets/blog-img3.jpg') center no-repeat;
+  background-size: cover;
+  width: min(330px, 25vw);
+}
+
+.card-cover__second-image {
+  background-color: blue;
+  padding: 4px;
+  background: url('/assets/blog-img2.jpg') center no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}

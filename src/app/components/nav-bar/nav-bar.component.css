@@ -1,0 +1,23 @@
+.navbar-container {
+  display: block;
+  padding: 16px 20px;
+}
+
+a {
+  color: #515559;
+  font-weight: 900;
+  padding: 10px 0;
+  margin: 2px 0;
+  display: block;
+
+  transition: 200ms;
+}
+
+a:hover {
+  color: #5091d2;
+}
+
+hr {
+  margin: 16px 0;
+  border: 1px solid #00000023;
+}
