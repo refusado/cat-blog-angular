@@ -13,16 +13,128 @@
 
 .card-cover__first-image {
   padding: 4px;
-  background-color: red;
   background: url('/assets/blog-img3.jpg') center no-repeat;
   background-size: cover;
   width: min(330px, 25vw);
 }
 
 .card-cover__second-image {
-  background-color: blue;
   padding: 4px;
   background: url('/assets/blog-img2.jpg') center no-repeat;
   background-size: cover;
   flex-grow: 1;
+}
+
+/* COVER SUB */
+
+.card-cover__sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.card-cover__sub .tag {
+  color: #0598b2;
+  border: 1px solid currentColor;
+  padding: 4px 18px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: .8rem;
+  user-select: none;
+}
+
+.card-cover__info {
+  text-transform: capitalize;
+  font-style: italic;
+  display: flex;
+  opacity: .5;
+}
+
+.card-cover__date::after {
+  content: '•';
+  margin: 0 10px;
+  opacity: .8;
+}
+
+/* COVER MAIN */
+
+.card-cover__main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.card-cover__title {
+  width: 50%;
+  font-size: 3rem;
+}
+
+.card-cover__description {
+  width: 50%;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+/* CARD FOOTER */
+
+.card-cover__footer {
+  text-align: right;
+}
+
+.card-cover__footer a {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  color: #0598b2;
+  padding: 10px 20px;
+  border: none;
+
+  font-weight: 100;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.card-cover__footer a:hover {
+  filter: brightness(1.2);
+}
+
+.card-cover__footer a::before {
+  content: '';
+  display: block;
+  background-color: transparent;
+  width: calc(1rem + 14px);
+  height: calc(1rem + 14px);
+
+  border-radius: 100%;
+  border: 2px solid #0598b2;
+
+  position: absolute;
+  right: 4px;
+  top: calc(1rem - 10px);;
+}
+
+.card-cover__footer a::after {
+  content: '';
+  display: inline-block;
+  background: url('/assets/arrow-right.svg') no-repeat;
+  background-size: cover;
+  width: 28px;
+  height: 1.5rem;
+  margin-left: 12px;
+  vertical-align: sub;
+
+  transform: translateX(0);
+  transition: 400ms;
+}
+
+.card-cover__footer a:hover::after {
+  transform: translateX(6px);
+  filter: brightness(1.12);
 }

@@ -1,0 +1,50 @@
+.contact__container {
+  padding: 12px;
+  border: 1px solid #00000042;
+  border-radius: 3px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #5091d2;
+}
+
+.sub {
+  margin: 4px 0 14px;
+  opacity: .8;
+}
+
+form {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #5091d2;
+  border-radius: 3px;
+}
+
+form input {
+  font-size: 1.02rem;
+  outline: none;
+  border-radius: 0;
+  border: none;
+}
+
+.contact__email {
+  width: 100%;
+  padding: 8px 8px;
+}
+
+.contact__submit {
+  color: #fff;
+  background-color: #5091d2;
+  text-transform: uppercase;
+  padding: 8px 16px;
+
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.contact__submit:hover {
+  background-color: #2f73b6;
+}
