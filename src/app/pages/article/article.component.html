@@ -1,1 +1,12 @@
-<p>article works!</p>
+<section class="article__container">
+  <a [routerLink]="''" class="article__back"><< Voltar</a>
+  <div class="article__banner">
+    <img src="{{ bannerImage }}" alt="Banner">
+  </div>
+  <div class="article__title">
+    <h1>{{ articleTitle }}</h1>
+  </div>
+  <div class="article__description">
+    <p>{{ articleContent }}</p>
+  </div>
+</section>

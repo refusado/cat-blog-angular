@@ -1,4 +1,4 @@
-<a class="small-card__container" href="/">
+<a class="small-card__container"  [routerLink]="['article', id]">
   <div class="small-card__left">
     <div class="small-card__header">
       <span class="tag">
@@ -6,7 +6,7 @@
       </span>
     </div>
     <h5 class="small-card__title">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit
+      {{ title }}
     </h5>
     <div class="small-card__info">
       <span class="small-card__date">
@@ -19,7 +19,7 @@
   </div>
   <div class="small-card__right">
     <div class="small-card__banner">
-      <img src="./assets/blog-img.jpg" alt="Banner">
+      <img src="{{ imageUrl }}" alt="{{ title }}">
     </div>
   </div>
 </a>
