@@ -3,12 +3,23 @@
 }
 
 .footer__item {
-  color: #000;
-  line-height: 2rem;
-  transition: 250ms;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
   padding: 10px;
+  width: fit-content;
+  width: min(300px, 100vw);
+  color: #000;
+
+  transition: 200ms;
 }
 
 .footer__item:hover {
   color: #1171d1;
+}
+
+p {
+  color: #515559;
+  margin-top: 60px;
+  text-align: center;
 }

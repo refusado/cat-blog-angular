@@ -11,18 +11,18 @@
   overflow: hidden;
 }
 
-.card-cover__first-image {
-  padding: 4px;
-  background: url('/assets/blog-img3.jpg') center no-repeat;
-  background-size: cover;
+.card-cover__first-image img {
   width: min(330px, 25vw);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.card-cover__second-image {
-  padding: 4px;
-  background: url('/assets/blog-img2.jpg') center no-repeat;
-  background-size: cover;
-  flex-grow: 1;
+.card-cover__second-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* COVER SUB */
@@ -128,7 +128,7 @@
 .card-cover__footer a::after {
   content: '';
   display: inline-block;
-  background: url('/assets/arrow-right.svg') no-repeat;
+  background: url('../../../assets/arrow-right.svg') no-repeat;
   background-size: cover;
   width: 28px;
   height: 1.5rem;
