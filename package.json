@@ -1,12 +1,13 @@
 {
-  "name": "blog-angular",
+  "name": "cat-blog-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:ghdocs":  "ng build --output-path docs --base-href /cat-blog-angular/"
   },
   "private": true,
   "dependencies": {
