@@ -1,10 +1,11 @@
 .main-card__container {
   display: block;
-  transition: 400ms;
+  border-radius: 5px;
+  transition: 350ms;
 }
 
 .main-card__container:hover {
-  background-color: #0000000f;
+  box-shadow: 0px 4px 30px -10px #00000011, 0px 2px 8px 0px #0000002b;
 }
 
 .main-card__banner {

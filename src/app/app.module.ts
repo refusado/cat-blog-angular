@@ -11,6 +11,7 @@ import { CardCoverComponent } from './components/card-cover/card-cover.component
 import { MainCardComponent } from './components/main-card/main-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     CardCoverComponent,
     MainCardComponent,
     SmallCardComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

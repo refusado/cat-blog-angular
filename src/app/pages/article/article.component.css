@@ -1,16 +1,16 @@
 .article__back {
   color: #000;
   display: inline-block;
-  margin-bottom: 20px;
+  margin: 20px 0;
   padding: 6px 12px;
   border: 1px solid #000;
   border-radius: 3px;
 
-  transition: 400ms;
+  transition: 350ms;
 }
 
 .article__back:hover {
-  background-color: #0000000d;
+  background-color: #1111171b;
 }
 
 .article__banner {
@@ -34,4 +34,8 @@
 
 .article__title {
   font-size: 1rem;
+}
+
+hr {
+  margin: 40px 20%;
 }

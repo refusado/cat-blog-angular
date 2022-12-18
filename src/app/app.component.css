@@ -1,4 +1,4 @@
-header, main {
+header, main, footer {
   max-width: min(1440px, 100vw);
   margin: 0 auto;
 }

@@ -1,0 +1,14 @@
+.footer__container {
+  padding: 40px 80px;
+}
+
+.footer__item {
+  color: #000;
+  line-height: 2rem;
+  transition: 250ms;
+  padding: 10px;
+}
+
+.footer__item:hover {
+  color: #1171d1;
+}

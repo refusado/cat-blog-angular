@@ -3,23 +3,22 @@
   <section class="cards">
     <div class="cards__left">
       <app-main-card
-        [imageUrl]="'/assets/blog-img.jpg'"
-        [title]="'Os maiores gatos da história do Brasil'"
-        id="0"
+        [imageUrl]="mainArticle.imageUrl"
+        [title]="mainArticle.title"
+        [id]="mainArticle.id"
       ></app-main-card>
     </div>
     <div class="cards__right">
       <p><strong>The latest</strong></p>
-      <app-small-card
-        [imageUrl]="'/assets/blog-img2.jpg'"
-        [title]="'Os gatos realmente não gostam dos humanos?'"
-        id="1"
-      ></app-small-card>
-      <app-small-card
-        [imageUrl]="'/assets/blog-img3.jpg'"
-        [title]="'274 motivos para você adotar um gato hoje mesmo!'"
-        id="2"
-      ></app-small-card>
+      <ul class="card__list">
+        <li *ngFor='let item of featuredArticles'>
+          <app-small-card
+            [imageUrl]="item.imageUrl"
+            [title]="item.title"
+            [id]="item.id"
+          ></app-small-card>
+        </li>
+      </ul>
       <app-contact-form></app-contact-form>
     </div>
   </section>

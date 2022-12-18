@@ -11,6 +11,7 @@ a {
   display: block;
 
   transition: 200ms;
+  cursor: pointer;
 }
 
 a:hover {
@@ -19,7 +20,15 @@ a:hover {
 
 hr {
   margin: 16px 0;
-  border: 1px solid #00000023;
+  border: 1px solid #00000028;
+}
+
+.navbar__h2 {
+  color: #0000003c;
+  font-weight: 900;
+  padding: 10px 0;
+  margin: -20px 0 0 0;
+  display: block;
 }
 
 .navbar__contact::after {
