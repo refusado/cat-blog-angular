@@ -1,0 +1,39 @@
+@media screen and (min-width: 980px) {
+  .navbar__container {
+    display: block;
+    padding: 16px 20px;
+  }
+
+  .navbar__toggle {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+  a, .navbar__h2 {
+    text-align: left;
+  }
+
+  .navbar__contact::after {
+    background: url('/assets/box-arrow-up-right.svg') no-repeat;
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    margin-left: .9rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    vertical-align: sub;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 400ms;
+  }
+
+  .navbar__contact:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}

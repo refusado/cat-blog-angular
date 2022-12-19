@@ -1,6 +1,84 @@
-.navbar-container {
+.navbar__container {
+  position: sticky;
+  top: 0;
+  background-color: #fbfbf9;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__toggle {
+  background-color: #5091d2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border: none;
+
+  cursor: pointer;
+  transition: 350ms;
+}
+
+.navbar__toggle:hover {
+  background-color: #3e7bb8;
+}
+
+nav {
+  width: 100%;
+  display: none;
+}
+
+.active {
   display: block;
-  padding: 16px 20px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #00000093;
+}
+
+.toggle__icon {
+  background-color: #fff;
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+
+  position: relative;
+}
+
+.toggle__icon::before, .toggle__icon::after {
+  content: '';
+  background-color: inherit;
+  display: block;
+  width: 24px;
+  height: 2px;
+  top: -6px;
+  position: absolute;
+}
+
+.toggle__icon::after {
+  top: 6px;
+}
+
+.toggle__icon-active {
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+.toggle__icon-active::before, .toggle__icon-active::after {
+  content: '';
+  background-color: #fff;
+  display: block;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.toggle__icon-active::after {
+  transform: rotate(-45deg);
 }
 
 a {
@@ -9,6 +87,7 @@ a {
   padding: 10px 0;
   margin: 2px 0;
   display: block;
+  text-align: center;
 
   transition: 200ms;
   cursor: pointer;
@@ -19,36 +98,20 @@ a:hover {
 }
 
 hr {
-  margin: 16px 0;
+  margin: 16px auto;
+  max-width: 200px;
   border: 1px solid #00000028;
 }
 
 .navbar__h2 {
   color: #0000003c;
-  font-weight: 900;
-  padding: 10px 0;
-  margin: -20px 0 0 0;
   display: block;
-}
+  margin: -20px 0 0 0;
+  padding: 10px;
 
-.navbar__contact::after {
-  background: url('/assets/box-arrow-up-right.svg') no-repeat;
-  background-size: cover;
-  content: '';
-  display: inline-block;
-  margin-left: .9rem;
-  width: 1.1rem;
-  height: 1.1rem;
-  vertical-align: sub;
-
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 400ms;
-}
-
-.navbar__contact:hover::after {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(-2px);
+  font-weight: 900;
+  font-size: .8rem;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
 }
