@@ -7,8 +7,12 @@
   justify-content: space-between;
   align-items: stretch;
   gap: 20px;
-  height: min(330px, 25vw);
+  height: 200px;
   overflow: hidden;
+}
+
+.card-cover__first-image {
+  display: none;
 }
 
 .card-cover__first-image img {
@@ -61,7 +65,7 @@
 
 .card-cover__main {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
@@ -69,21 +73,21 @@
 }
 
 .card-cover__title {
-  width: 50%;
+  width: 100%;
 }
 
 .card-cover__title a {
   color: #000;
-  font-size: 3rem;
+  font-size: 1.8rem;
   transition: 400ms;
 }
 
 .card-cover__title a:hover {
-  background-color: #0598b20c;
+  background-color: #0598b210;
 }
 
 .card-cover__description {
-  width: 50%;
+  width: 100%;
   font-size: 1rem;
   line-height: 1.4rem;
 }
@@ -99,6 +103,7 @@
   position: relative;
   background-color: transparent;
   color: #0598b2;
+  margin-top: 20px;
   padding: 10px 20px;
   border: none;
 

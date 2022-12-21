@@ -36,4 +36,10 @@
     opacity: 1;
     transform: translateY(-2px);
   }
+
+  .active {
+    display: unset;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }

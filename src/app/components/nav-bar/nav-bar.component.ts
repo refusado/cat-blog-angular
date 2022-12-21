@@ -12,7 +12,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navbarActive: boolean = true;
+  navbarActive: boolean = false;
   toggleNavbar(): void {
     this.navbarActive = !this.navbarActive;
   }
