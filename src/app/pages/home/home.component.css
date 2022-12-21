@@ -5,20 +5,12 @@
 
 .cards {
   display: flex;
+  flex-flow: column;
   gap: 20px;
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 20px 8px;
 }
 
-.cards__left {
-  width: 50%;
-}
-
-.cards__right {
-  width: 50%;
-}
-
-.cards__right p {
+.cards p {
   text-transform: uppercase;
   transform: scaleY(0.8);
   font-size: 1.4rem;

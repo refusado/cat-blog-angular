@@ -1,0 +1,14 @@
+@media screen and (min-width: 680px) {
+  .cards {
+    flex-flow: row nowrap;
+    margin: 40px 20px;
+  }
+
+  .cards__left {
+    width: 50%;
+  }
+
+  .cards__right {
+    width: 50%;
+  }
+}

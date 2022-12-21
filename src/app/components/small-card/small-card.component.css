@@ -1,7 +1,7 @@
 .small-card__container {
   display: flex;
   gap: 16px;
-  height: 120px;
+  height: 140px;
   margin: 15px 0 30px;
   transition: 400ms;
   border-radius: 5px;
@@ -16,7 +16,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   width: 60%;
-  height: 120px;
+  height: 100%;
 }
 
 .small-card__header .tag {
@@ -33,6 +33,11 @@
 .small-card__title {
   font-size: 1.3rem;
   color: #000;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .small-card__info {
@@ -52,12 +57,13 @@
 
 .small-card__right {
   width: 40%;
-  height: 120px;
+  height: inherit;
   overflow: hidden;
 }
 
 .small-card__banner img {
+  background-color: blue;
   width: 100%;
-  height: 120px;
+  height: 140px;
   object-fit: cover;
 }

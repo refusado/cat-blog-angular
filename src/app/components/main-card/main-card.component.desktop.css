@@ -1,0 +1,52 @@
+@media screen and (min-width: 680px) {
+  .main-card__container {
+    display: block;
+    border-radius: 5px;
+    transition: 400ms;
+  }
+
+  .main-card__container:hover {
+    background-color: #0598b211;
+  }
+
+  .main-card__banner {
+    width: 100%;
+    background: no-repeat center;
+    background-size: cover;
+    height: 300px;
+    color: #000;
+  }
+
+  .main-card__sub .tag {
+    display: inline-block;
+    color: #0598b2;
+    border: 1px solid currentColor;
+    padding: 4px 18px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    user-select: none;
+    margin: 20px 0;
+  }
+
+  .main-card__title {
+    font-size: 1.8rem;
+    color: #000;
+  }
+
+  .main-card__info {
+    text-transform: capitalize;
+    font-style: italic;
+    display: flex;
+    opacity: .5;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    color: #000;
+  }
+
+  .main-card__date::after {
+    content: '•';
+    margin: 0 10px;
+    opacity: .8;
+  }
+}
