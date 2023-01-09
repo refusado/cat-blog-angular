@@ -2,15 +2,25 @@
   .navbar__container {
     display: block;
     padding: 16px 20px;
+    position: sticky;
   }
 
   .navbar__toggle {
     display: none;
   }
 
-  nav {
+  .navbar__list {
     display: block;
+    border: none;
+    border-radius: none;
+    border-bottom-width: none;
+    position: absolute;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
+
   a, .navbar__h2 {
     text-align: left;
   }
@@ -41,5 +51,9 @@
     display: unset;
     padding-bottom: 0;
     border-bottom: none;
+  }
+
+  hr {
+    width: 100%;
   }
 }

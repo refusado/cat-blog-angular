@@ -1,8 +1,8 @@
 <div class="navbar__container">
   <button class="navbar__toggle" (click)="toggleNavbar()">
-    <span class="toggle__icon" [ngClass]="{'toggle__icon-active': navbarActive}"></span>
+    <span class="toggle__icon" [ngClass]="{'active': navbarActive}"></span>
   </button>
-  <nav [ngClass]="{'active': navbarActive}">
+  <nav class="navbar__list" [ngClass]="{'active': navbarActive}">
     <ul>
       <li><a [routerLink]="['']">Home Page</a></li>
       <li><a [routerLink]="['']">Articles</a></li>

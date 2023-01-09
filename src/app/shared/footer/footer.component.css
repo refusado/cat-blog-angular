@@ -1,4 +1,5 @@
 .footer__container {
+  display: none;
   padding: 40px 80px;
 }
 

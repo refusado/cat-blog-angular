@@ -1,11 +1,12 @@
 .navbar__container {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: #fbfbf9;
+  margin-left: 20px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  height: 68px;
 }
 
 .navbar__toggle {
@@ -14,9 +15,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 20px;
+  width: 36px;
+  height: 36px;
   border: none;
+  border-radius: 100%;
 
   cursor: pointer;
   transition: 350ms;
@@ -26,31 +28,41 @@
   background-color: #3e7bb8;
 }
 
-nav {
-  width: 100%;
+.navbar__list {
   display: none;
+  padding-bottom: 10px;
+
+  border: 2px solid #3e7bb8;
+  border-radius: 4px;
+  border-bottom-width: 4px;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: min(calc(98vw - 20px), 280px)
 }
 
-.active {
+.navbar__list.active {
   display: block;
-  padding-bottom: 10px;
-  border-bottom: 4px solid #00000093;
 }
 
 .toggle__icon {
   background-color: #fff;
-  display: inline-block;
-  width: 24px;
+  display: inline-flex;
+  justify-content: center;
+  width: 20px;
   height: 2px;
 
   position: relative;
+  transition: 400ms;
+  transform: rotate(0deg);
 }
 
 .toggle__icon::before, .toggle__icon::after {
   content: '';
   background-color: inherit;
   display: block;
-  width: 24px;
+  width: 10px;
   height: 2px;
   top: -6px;
   position: absolute;
@@ -60,25 +72,18 @@ nav {
   top: 6px;
 }
 
-.toggle__icon-active {
-  background-color: transparent;
-  display: inline-block;
-  position: relative;
-}
-
-.toggle__icon-active::before, .toggle__icon-active::after {
-  content: '';
-  background-color: #fff;
-  display: block;
-  width: 24px;
-  height: 2px;
-  position: absolute;
-  top: 0;
+.toggle__icon.active{
   transform: rotate(45deg);
 }
 
-.toggle__icon-active::after {
-  transform: rotate(-45deg);
+.toggle__icon.active::before, .toggle__icon.active::after{
+  width: 18px;
+  height: 2px;
+  top: 0;
+}
+
+.toggle__icon.active::after{
+  transform: rotate(-90deg);
 }
 
 a {
@@ -100,6 +105,7 @@ a:hover {
 hr {
   margin: 16px auto;
   border: 1px solid #0000002f;
+  width: 60%;
 }
 
 .navbar__h2 {
