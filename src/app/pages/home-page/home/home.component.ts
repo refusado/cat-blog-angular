@@ -1,4 +1,4 @@
-import { Article } from './../../models/Article.interface';
+import { Article } from '../../../models/Article.interface';
 import { Component, OnInit } from '@angular/core';
 import { fakeData } from 'src/app/data/fakeData';
 

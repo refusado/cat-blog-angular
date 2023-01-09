@@ -136,7 +136,7 @@
 .card-cover__footer a::after {
   content: '';
   display: inline-block;
-  background: url('../../../assets/arrow-right.svg') no-repeat;
+  background: url('../../../../assets/arrow-right.svg') no-repeat;
   background-size: cover;
   width: 28px;
   height: 1.5rem;
