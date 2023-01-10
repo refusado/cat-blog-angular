@@ -1,0 +1,21 @@
+@media screen and (min-width: 680px) {
+  .contact__container {
+    margin: 0px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .sub {
+    font-size: unset;
+  }
+
+  form input {
+    font-size: 1.02rem;
+  }
+
+  .contact__submit {
+    padding: 8px 16px;
+  }
+}

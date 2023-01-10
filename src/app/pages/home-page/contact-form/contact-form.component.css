@@ -1,4 +1,5 @@
 .contact__container {
+  margin: 10px;
   padding: 12px;
   border: 1px solid #00000042;
   border-radius: 3px;
@@ -6,13 +7,14 @@
 
 .title {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.12rem;
   color: #5091d2;
 }
 
 .sub {
-  margin: 4px 0 14px;
+  margin: 8px 0 14px;
   opacity: .8;
+  font-size: 0.9rem;
 }
 
 form {
@@ -24,7 +26,7 @@ form {
 }
 
 form input {
-  font-size: 1.02rem;
+  font-size: 0.9rem;
   outline: none;
   border-radius: 0;
   border: none;
@@ -39,7 +41,7 @@ form input {
   color: #fff;
   background-color: #5091d2;
   text-transform: uppercase;
-  padding: 8px 16px;
+  padding: 6px 10px;
 
   cursor: pointer;
   transition: 400ms;

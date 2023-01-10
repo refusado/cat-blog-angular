@@ -1,13 +1,16 @@
 @media screen and (min-width: 680px) {
+  .card-cover__container {
+    margin-bottom: unset;
+  }
+
   .card-cover__header {
     height: min(330px, 25vw);
+    margin-bottom: unset;
   }
 
   .card-cover__first-image {
     display: block;
   }
-
-  /* COVER MAIN */
 
   .card-cover__main {
     flex-flow: row nowrap;
@@ -24,8 +27,6 @@
   .card-cover__description {
     width: 50%;
   }
-
-  /* CARD FOOTER */
 
   .card-cover__footer a {
     margin-top: 0;

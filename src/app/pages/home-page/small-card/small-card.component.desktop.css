@@ -1,0 +1,21 @@
+@media screen and (min-width: 680px) {
+  .small-card__container {
+    gap: 16px;
+    height: 140px;
+    padding: 0;
+  }
+
+  .small-card__header .tag {
+    padding: 4px 18px;
+    font-size: .8rem;
+  }
+
+  .small-card__title {
+    font-size: 1.3rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .small-card__banner img {
+    height: 140px;
+  }
+}

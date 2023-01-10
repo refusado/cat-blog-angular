@@ -1,3 +1,7 @@
+.card-cover__container {
+  margin-bottom: 40px;
+}
+
 .card-cover__header {
   display: flex;
   justify-content: space-between;

@@ -1,15 +1,16 @@
 .main-card__container {
   display: flex;
   flex-flow: column nowrap;
-  gap: 16px;
+  gap: 6px;
   border-radius: 5px;
   transition: 400ms;
+  padding: 0 4px;
 }
 
-.main-card__main{
+.main-card__main {
   display: flex;
   flex-flow: column nowrap;
-  gap: 24px;
+  gap: 18px;
 }
 
 .main-card__container:hover {
@@ -28,15 +29,15 @@
   display: inline-block;
   color: #0598b2;
   border: 1px solid currentColor;
-  padding: 4px 18px;
+  padding: 4px 12px;
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: .6rem;
   user-select: none;
 }
 
 .main-card__title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #000;
 }
 
