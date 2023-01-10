@@ -1,0 +1,28 @@
+<div class="quizz__container">
+  <a [routerLink]="''" class="article__back"><< Voltar</a>
+  <div class="article__banner">
+    <img src="{{ bannerImage }}" alt="Banner">
+  </div>
+  <div class="quizz__header">
+    <h1>QuizzCat</h1>
+    <h2>{{ title }}</h2>
+  </div>
+
+  <div *ngIf="!finished" class="quizz__question">
+    <h3>{{ currentQuestion.question }}</h3>
+  </div>
+
+  <div *ngIf="!finished" class="quizz__options">
+    <button class="quizz__option-btn"
+      *ngFor="let option of currentQuestion.options; let i = index"
+      (click)="selectAnswer(option.alias)"
+    >
+    {{ option.name }}
+    </button>
+  </div>
+
+  <div *ngIf="finished" class="quizz__result">
+    <h3>Seu resultado: </h3>
+    <p>{{ selectedAnswer }}</p>
+  </div>
+</div>

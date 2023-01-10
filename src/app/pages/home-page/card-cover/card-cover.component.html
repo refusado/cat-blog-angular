@@ -22,7 +22,7 @@
   </div>
   <div class="card-cover__main">
     <h3 class="card-cover__title">
-      <a href="https://refusado.github.io/buzzfeed-angular/" target="_blank">
+      <a [routerLink]="['quizz', id]">
         Descubra qual gato você seria com base na sua personalidade
       </a>
     </h3>
@@ -33,6 +33,6 @@
     </p>
   </div>
   <div class="card-cover__footer">
-    <a href="https://refusado.github.io/buzzfeed-angular/" target="_blank">Read more</a>
+    <a [routerLink]="['quizz', id]">Read more</a>
   </div>
 </section>

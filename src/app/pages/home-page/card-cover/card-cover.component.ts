@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-cover.component.css', './card-cover.component.desktop.css']
 })
 export class CardCoverComponent implements OnInit {
+  id = 1;
 
   constructor() { }
 

@@ -1,3 +1,4 @@
+import { QuizzComponent } from './pages/quizz-page/quizz/quizz.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home-page/home/home.component';
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'article/:id',
     component: ArticleComponent
+  },
+  {
+    path: 'quizz/:id',
+    component: QuizzComponent
   }
 ];
 
