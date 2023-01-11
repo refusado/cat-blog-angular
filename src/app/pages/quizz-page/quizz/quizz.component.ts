@@ -7,8 +7,8 @@ import QUESTIONS from '../../../data/quizz-questions.json';
   styleUrls: ['./quizz.component.css']
 })
 export class QuizzComponent implements OnInit {
-  private id: number = 0;
-  private quizz: any;
+  id: number = 0;
+  quizz: any;
 
   title: string = "";
   bannerImage: string = "";
@@ -71,5 +71,12 @@ export class QuizzComponent implements OnInit {
     });
 
     return result;
+  }
+
+  restart() {
+    this.finished = false;
+    this.answers.length = 0;
+    this.questionIndex = 0;
+    this.currentQuestion = this.questions[this.questionIndex];
   }
 }

@@ -1,15 +1,15 @@
 [
   {
     "id": "0",
-    "title": "Qual gato você seria?",
+    "title": "Descubra qual gato você seria se também fosse um deles",
     "banner": "./assets/blog-img2.jpg",
     "questions":[
       {
         "id": 1,
-        "question": "???",
+        "question": "Qual sua cor preferida?",
         "options":[
-          {"id": 1, "name": "A", "alias": "A"},
-          {"id": 2, "name": "B", "alias": "B"}
+          {"id": 1, "name": "Vermelho claro", "alias": "A"},
+          {"id": 2, "name": "Cinza esverdiado com vermelho", "alias": "B"}
         ]
       },
       {

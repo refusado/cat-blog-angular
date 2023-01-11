@@ -1,28 +1,28 @@
 <div class="quizz__container">
-  <a [routerLink]="''" class="article__back"><< Voltar</a>
-  <div class="article__banner">
+  <a [routerLink]="''" class="quizz__back"><< Voltar</a>
+  <div class="quizz__banner">
     <img src="{{ bannerImage }}" alt="Banner">
   </div>
   <div class="quizz__header">
-    <h1>QuizzCat</h1>
-    <h2>{{ title }}</h2>
+    <h1 class="quizz__name">QuizzCat</h1>
+    <h2 class="quizz__title">{{ title }}</h2>
   </div>
 
-  <div *ngIf="!finished" class="quizz__question">
-    <h3>{{ currentQuestion.question }}</h3>
-  </div>
-
-  <div *ngIf="!finished" class="quizz__options">
-    <button class="quizz__option-btn"
-      *ngFor="let option of currentQuestion.options; let i = index"
-      (click)="selectAnswer(option.alias)"
-    >
-    {{ option.name }}
-    </button>
-  </div>
-
-  <div *ngIf="finished" class="quizz__result">
-    <h3>Seu resultado: </h3>
-    <p>{{ selectedAnswer }}</p>
+  <div class="quizz__content">
+    <div *ngIf="!finished" class="quizz__question-container">
+      <h3 class="quizz__question">{{ currentQuestion.question }}</h3>
+    </div>
+    <div *ngIf="!finished" class="quizz__options">
+      <button class="quizz__option-btn"
+        *ngFor="let option of currentQuestion.options; let i = index"
+        (click)="selectAnswer(option.alias)"
+      >
+      {{ option.name }}
+      </button>
+    </div>
+    <div *ngIf="finished" class="quizz__result-container">
+      <p class="quizz__result">{{ selectedAnswer }}</p>
+      <a class="quizz__restart-btn" (click)="restart()">Recomeçar</a>
+    </div>
   </div>
 </div>

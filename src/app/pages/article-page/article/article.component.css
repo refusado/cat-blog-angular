@@ -14,7 +14,6 @@
 }
 
 .article__banner {
-  height: 400px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -22,14 +21,16 @@
 
 .article__banner img {
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .article__title {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .article__title h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .article__title {
@@ -38,4 +39,18 @@
 
 hr {
   margin: 40px 20%;
+}
+
+@media screen and (min-width: 680px) {
+  .article__banner {
+    height: min(400px, 30vw);
+  }
+
+  .article__title h1 {
+    font-size: 2.5rem;
+  }
+
+  .article__title {
+    padding: 30px 0;
+  }
 }
