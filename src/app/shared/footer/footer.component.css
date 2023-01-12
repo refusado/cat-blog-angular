@@ -1,15 +1,23 @@
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 100vw;
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 2px solid #00000069;
+}
+
 .footer__container {
-  display: none;
-  padding: 40px 80px;
+  width: fit-content;
 }
 
 .footer__item {
   text-align: center;
   display: block;
-  margin: 0 auto;
-  padding: 10px;
-  width: fit-content;
-  width: min(300px, 100vw);
+  padding: 8px 20px;
   color: #000;
 
   transition: 200ms;
@@ -19,8 +27,7 @@
   color: #1171d1;
 }
 
-p {
-  color: #515559;
-  margin-top: 60px;
+.footer__copy {
+  color: #000000b8;
   text-align: center;
 }

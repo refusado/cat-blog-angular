@@ -1,56 +1,100 @@
 [
   {
-    "id": "0",
-    "title": "Descubra qual gato você seria se também fosse um deles",
+    "id": "1",
+    "title": "Descubra qual gato você seria se também fosse um deles!",
     "banner": "./assets/blog-img2.jpg",
     "questions":[
       {
         "id": 1,
-        "question": "Qual sua cor preferida?",
+        "question": "Antes de fazer uma ligação, você costuma ensaiar o que vai dizer?",
         "options":[
-          {"id": 1, "name": "Vermelho claro", "alias": "A"},
-          {"id": 2, "name": "Cinza esverdiado com vermelho", "alias": "B"}
+          {"id": 1, "name": "Sim", "alias": "A"},
+          {"id": 2, "name": "Não", "alias": "D"},
+          {"id": 2, "name": "Apenas se for uma ligação importante", "alias": "B"}
         ]
       },
       {
         "id": 2,
-        "question": "?????",
+        "question": "Você prefere assistir um filme...",
         "options":[
-          {"id": 1, "name": "A", "alias": "A"},
-          {"id": 2, "name": "B", "alias": "B"}
-        ]
-      }
-    ],
-    "results": {
-      "A": "Resposta A",
-      "B": "Resposta B"
-    }
-  },
-  {
-    "id": "0",
-    "title": "Qual gato você deve ter",
-    "banner": "./assets/blog-img1.jpg",
-    "questions":[
-      {
-        "id": 1,
-        "question": "???",
-        "options":[
-          {"id": 1, "name": "A", "alias": "A"},
-          {"id": 2, "name": "B", "alias": "B"}
+          {"id": 2, "name": "Com os amigos", "alias": "E"},
+          {"id": 2, "name": "Sozinho", "alias": "G"},
+          {"id": 1, "name": "Com a família", "alias": "F"},
+          {"id": 2, "name": "Com algum crush o.O", "alias": "A"}
         ]
       },
       {
-        "id": 2,
-        "question": "???",
+        "id": 3,
+        "question": "Qual destes estilos de música você mais gosta?",
         "options":[
-          {"id": 1, "name": "A", "alias": "A"},
-          {"id": 2, "name": "B", "alias": "B"}
+          {"id": 1, "name": "Pop", "alias": "E"},
+          {"id": 2, "name": "MPB", "alias": "F"},
+          {"id": 2, "name": "Sertanejo", "alias": "A"},
+          {"id": 2, "name": "Funk", "alias": "D"},
+          {"id": 2, "name": "Rock", "alias": "C"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Você pratica atividades físicas?",
+        "options":[
+          {"id": 1, "name": "É... acho que sim", "alias": "A"},
+          {"id": 2, "name": "Não gosto", "alias": "F"},
+          {"id": 2, "name": "Eu amo praticar atividades físicas!", "alias": "D"},
+          {"id": 2, "name": "Odeio atividades físicas ¬¬", "alias": "G"},
+          {"id": 2, "name": "Não pratico, mas queria experimentar", "alias": "C"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Qual tipo de filme/série você prefere?",
+        "options":[
+          {"id": 1, "name": "Ficção", "alias": "B"},
+          {"id": 2, "name": "Comédia", "alias": "E"},
+          {"id": 2, "name": "Romance", "alias": "A"},
+          {"id": 2, "name": "Ação", "alias": "D"},
+          {"id": 2, "name": "Terror", "alias": "F"}
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Você costuma cantar sozinho?",
+        "options":[
+          {"id": 1, "name": "Sim, só canto sozinho", "alias": "G"},
+          {"id": 2, "name": "Não, nunca canto", "alias": "F"},
+          {"id": 2, "name": "Canto sozinho e até em público, não ligo", "alias": "E"}
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Você se sente melhor...",
+        "options":[
+          {"id": 1, "name": "Lendo um livro", "alias": "B"},
+          {"id": 2, "name": "Assistindo um filme, uma série ou video-game", "alias": "G"},
+          {"id": 2, "name": "Navegando nas redes sociais", "alias": "A"},
+          {"id": 2, "name": "Conversando com os amigos", "alias": "E"},
+          {"id": 2, "name": "Fazendo coisas diferentes", "alias": "C"}
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Tem metas para o futuro?",
+        "options":[
+          {"id": 1, "name": "Tenho uma ideia de onde quero estar no futuro", "alias": "C"},
+          {"id": 2, "name": "Mais ou menos, tenho uns objetivos, estou seguindo a vida e fazendo as coisas com calma", "alias": "G"},
+          {"id": 2, "name": "Tracei metas específicas e sei exatamente o que quero para este e os próximos anos", "alias": "B"},
+          {"id": 2, "name": "Tenho algumas metas, mas não tenho nem prazo, parecem mais sonhos...", "alias": "C"}
         ]
       }
     ],
     "results": {
-      "A": "Resposta A",
-      "B": "Resposta B"
+      "A": "Você provavelmente seria um Gato azul russo!",
+      "B": "Você provavelmente seria um Sphynx!",
+      "C": "Você provavelmente seria um Maine coon!",
+      "D": "Você provavelmente seria um Gato german rex ou Rex alemão!",
+      "E": "Você provavelmente seria um Gato Korat!",
+      "F": "Você provavelmente seria um Gato Bombaim!",
+      "G": "Você provavelmente seria um Ocica!t"
     }
   }
 ]

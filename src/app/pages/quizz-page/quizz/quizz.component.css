@@ -14,6 +14,7 @@
 }
 
 .quizz__banner {
+  height: 220px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -21,8 +22,17 @@
 
 .quizz__banner img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.quizz__description {
+  padding: 0px 4px;
+}
+
+.quizz__description p {
+  margin: 20px 0;
 }
 
 .quizz__name {
@@ -42,7 +52,7 @@
 .quizz__content {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 4px;
+  padding: 0 20px;
 }
 
 .quizz__question {
@@ -79,7 +89,7 @@
   border: 1px solid #5091d2;
   font-size: 1rem;
   cursor: pointer;
-  transition: 200ms;
+  transition: 0ms;
 }
 
 .quizz__option-btn:hover {

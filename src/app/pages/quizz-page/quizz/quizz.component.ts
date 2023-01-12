@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import QUESTIONS from '../../../data/quizz-questions.json';
 
 @Component({
@@ -7,7 +8,7 @@ import QUESTIONS from '../../../data/quizz-questions.json';
   styleUrls: ['./quizz.component.css']
 })
 export class QuizzComponent implements OnInit {
-  id: number = 0;
+  id: any = "1";
   quizz: any;
 
   title: string = "";
@@ -16,15 +17,26 @@ export class QuizzComponent implements OnInit {
   currentQuestion: any;
 
   answers: string[] = [];
-  selectedAnswer: string = "";
+  userAnswer: string = "";
   questionMaxIndex: number = 0;
 
   questionIndex: number = 0;
 
   finished: boolean = false;
 
+  constructor( private route: ActivatedRoute ) {
+    if (route != null)
+    this.route.paramMap.subscribe((value) => {
+      this.id = value.get('id');
+    });
+
+    console.info(this.id);
+  }
+
   ngOnInit(): void {
-    this.quizz = QUESTIONS[this.id];
+    this.quizz = QUESTIONS.filter(question => {
+      return question.id == this.id;
+    })[0];
 
     if (this.quizz) {
       this.questions = this.quizz.questions;
@@ -32,11 +44,13 @@ export class QuizzComponent implements OnInit {
 
       this.title = this.quizz.title;
       this.bannerImage = this.quizz.banner;
-      this.currentQuestion = this.questions[this.questionIndex];
+      this.currentQuestion = this.quizz.questions[this.questionIndex];
 
       this.questionIndex = 0;
-      this.questionMaxIndex = this.questions.length;
+      this.questionMaxIndex = this.quizz.questions.length;
     }
+
+    console.error(this.bannerImage);
 
   }
 
@@ -54,7 +68,9 @@ export class QuizzComponent implements OnInit {
       this.finished = true;
       const result: string = await this.checkResult(this.answers);
 
-      this.selectedAnswer = this.quizz.results[result as keyof typeof this.quizz.results];
+      this.userAnswer = this.quizz.results[result as keyof typeof this.quizz.results];
+
+      console.info(this.answers);
     }
   }
 
@@ -73,7 +89,7 @@ export class QuizzComponent implements OnInit {
     return result;
   }
 
-  restart() {
+  restart(): void {
     this.finished = false;
     this.answers.length = 0;
     this.questionIndex = 0;

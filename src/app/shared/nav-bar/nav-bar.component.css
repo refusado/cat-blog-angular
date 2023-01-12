@@ -35,7 +35,7 @@
   border: 2px solid #3e7bb8;
   border-radius: 4px;
   border-bottom-width: 4px;
-  background-color: #fff;
+  background-color: #fbfbf9;
   position: absolute;
   top: 60px;
   left: 0;
@@ -47,7 +47,7 @@
 }
 
 .toggle__icon {
-  background-color: #fff;
+  background-color: #fbfbf9;
   display: inline-flex;
   justify-content: center;
   width: 20px;
@@ -119,4 +119,19 @@ hr {
   text-align: center;
   text-transform: uppercase;
   user-select: none;
+}
+
+.navbar__contact::after {
+  background: url('/assets/box-arrow-up-right.svg') no-repeat;
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  margin-left: .9rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: sub;
+
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-2px);
 }

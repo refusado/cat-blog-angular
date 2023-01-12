@@ -26,15 +26,6 @@
   }
 
   .navbar__contact::after {
-    background: url('/assets/box-arrow-up-right.svg') no-repeat;
-    background-size: cover;
-    content: '';
-    display: inline-block;
-    margin-left: .9rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    vertical-align: sub;
-
     visibility: hidden;
     opacity: 0;
     transform: translateY(20px);

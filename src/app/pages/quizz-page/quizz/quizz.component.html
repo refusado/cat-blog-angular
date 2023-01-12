@@ -3,6 +3,16 @@
   <div class="quizz__banner">
     <img src="{{ bannerImage }}" alt="Banner">
   </div>
+
+  <div class="quizz__description">
+    <p>
+      Você gosta de gatos? Já pensou como você seria se você um? Qual seria a sua raça, como seria a sua vida, a sua aparência, seus donos, o que iria fazer?
+    </p>
+    <p>
+      A partir da sua personalidade, costumes e jeito de viver, com este teste conseguimos ter uma ideia de qual raça se encaixaria com você, assim você saberá qual o tipo de gato você seria se também fosse um deles!
+    </p>
+  </div>
+
   <div class="quizz__header">
     <h1 class="quizz__name">QuizzCat</h1>
     <h2 class="quizz__title">{{ title }}</h2>
@@ -21,8 +31,8 @@
       </button>
     </div>
     <div *ngIf="finished" class="quizz__result-container">
-      <p class="quizz__result">{{ selectedAnswer }}</p>
-      <a class="quizz__restart-btn" (click)="restart()">Recomeçar</a>
+      <p class="quizz__result">{{ userAnswer }}</p>
+      <a class="quizz__restart-btn" (click)="restart()">Refazer teste</a>
     </div>
   </div>
 </div>
