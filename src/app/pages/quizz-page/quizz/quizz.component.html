@@ -5,12 +5,14 @@
   </div>
 
   <div class="quizz__description">
-    <p>
-      Você gosta de gatos? Já pensou como você seria se você um? Qual seria a sua raça, como seria a sua vida, a sua aparência, seus donos, o que iria fazer?
-    </p>
-    <p>
-      A partir da sua personalidade, costumes e jeito de viver, com este teste conseguimos ter uma ideia de qual raça se encaixaria com você, assim você saberá qual o tipo de gato você seria se também fosse um deles!
-    </p>
+    <p>Os gatos são animais fascinantes que conquistam o coração das pessoas com sua beleza, elegância e personalidades únicas. Esses felinos misteriosos despertam curiosidade e encantamento em todos que têm a oportunidade de conhecê-los de perto. Além de sua aparência cativante, os gatos também apresentam uma ampla variedade de personalidades, o que nos leva a fazer uma interessante associação com as características humanas.</p>
+    <p>Cada gato possui sua própria individualidade e comportamentos singulares, o que nos leva a refletir sobre como as personalidades felinas podem ser comparadas às diferentes personalidades encontradas entre nós, seres humanos. Para explorar essa conexão entre felinos e pessoas, criamos um quiz divertido que permitirá a você descobrir qual tipo de gato você seria se também fosse um deles.</p>
+    <p>Antes de entrar no quiz, é interessante destacar que os gatos possuem uma grande variedade de raças, cada uma com suas próprias peculiaridades. Assim como os seres humanos, essas raças têm características marcantes que as diferenciam umas das outras. Durante o quiz, você terá a oportunidade de identificar qual raça de gato se assemelha mais à sua personalidade, permitindo uma conexão divertida e surpreendente com esses adoráveis felinos.</p>
+    <p>Os gatos são conhecidos por sua independência e elegância. Eles têm um ar de mistério ao seu redor, caminhando com graça e mantendo uma postura altiva. Alguns gatos são sociáveis e afetuosos, buscando a companhia de seus donos e adorando receber carinho. Outros são mais reservados e preferem momentos de tranquilidade e introspecção. Essa diversidade de temperamentos felinos nos leva a fazer paralelos interessantes com as personalidades humanas.</p>
+    <p>Agora é a hora de descobrir qual tipo de gato você seria! Responda ao quiz com sinceridade, escolhendo as opções que mais se aproximam de suas preferências e características pessoais. Ao final, você receberá o resultado que revelará qual raça de gato mais combina com sua personalidade.</p>
+    <p>Lembrando que essa associação entre personalidades humanas e felinas é uma brincadeira divertida, mas que nos permite refletir sobre como os gatos, assim como nós, possuem uma ampla gama de temperamentos e comportamentos. Eles são seres incríveis e cheios de mistérios, capazes de trazer alegria e afeto aos lares onde são acolhidos.</p>
+    <p>Após descobrir qual tipo de gato você seria, não deixe de compartilhar o resultado com seus amigos e familiares. Afinal, quem não gostaria de conhecer a versão felina de si mesmo? Divirta-se com o quiz e mergulhe no fascinante mundo dos gatos, explorando as semelhanças entre esses adoráveis felinos e as complexidades da natureza humana.</p>
+    <p>Agora é hora de começar o quiz e desvendar o mistério por trás da sua personalidade felina!</p>
   </div>
 
   <div class="quizz__header">
@@ -31,7 +33,8 @@
       </button>
     </div>
     <div *ngIf="finished" class="quizz__result-container">
-      <p class="quizz__result">{{ userAnswer }}</p>
+      <h4 class="quizz__result">{{ quizAnswerMain }}</h4>
+      <p class="quizz__desc">{{ quizAnswerDesc }}</p>
       <a class="quizz__restart-btn" (click)="restart()">Refazer teste</a>
     </div>
   </div>

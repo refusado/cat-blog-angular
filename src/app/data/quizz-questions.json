@@ -10,17 +10,17 @@
         "options":[
           {"id": 1, "name": "Sim", "alias": "A"},
           {"id": 2, "name": "Não", "alias": "D"},
-          {"id": 2, "name": "Apenas se for uma ligação importante", "alias": "B"}
+          {"id": 3, "name": "Apenas se for uma ligação importante", "alias": "B"}
         ]
       },
       {
         "id": 2,
         "question": "Você prefere assistir um filme...",
         "options":[
-          {"id": 2, "name": "Com os amigos", "alias": "E"},
+          {"id": 1, "name": "Com os amigos", "alias": "E"},
           {"id": 2, "name": "Sozinho", "alias": "G"},
-          {"id": 1, "name": "Com a família", "alias": "F"},
-          {"id": 2, "name": "Com algum crush o.O", "alias": "A"}
+          {"id": 3, "name": "Com a família", "alias": "F"},
+          {"id": 4, "name": "Com algum crush o.O", "alias": "A"}
         ]
       },
       {
@@ -29,9 +29,9 @@
         "options":[
           {"id": 1, "name": "Pop", "alias": "E"},
           {"id": 2, "name": "MPB", "alias": "F"},
-          {"id": 2, "name": "Sertanejo", "alias": "A"},
-          {"id": 2, "name": "Funk", "alias": "D"},
-          {"id": 2, "name": "Rock", "alias": "C"}
+          {"id": 3, "name": "Sertanejo", "alias": "A"},
+          {"id": 4, "name": "Funk", "alias": "D"},
+          {"id": 5, "name": "Rock", "alias": "C"}
         ]
       },
       {
@@ -40,9 +40,9 @@
         "options":[
           {"id": 1, "name": "É... acho que sim", "alias": "A"},
           {"id": 2, "name": "Não gosto", "alias": "F"},
-          {"id": 2, "name": "Eu amo praticar atividades físicas!", "alias": "D"},
-          {"id": 2, "name": "Odeio atividades físicas ¬¬", "alias": "G"},
-          {"id": 2, "name": "Não pratico, mas queria experimentar", "alias": "C"}
+          {"id": 3, "name": "Eu amo praticar atividades físicas!", "alias": "D"},
+          {"id": 4, "name": "Odeio atividades físicas ¬¬", "alias": "G"},
+          {"id": 5, "name": "Não pratico, mas queria experimentar", "alias": "C"}
         ]
       },
       {
@@ -51,9 +51,9 @@
         "options":[
           {"id": 1, "name": "Ficção", "alias": "B"},
           {"id": 2, "name": "Comédia", "alias": "E"},
-          {"id": 2, "name": "Romance", "alias": "A"},
-          {"id": 2, "name": "Ação", "alias": "D"},
-          {"id": 2, "name": "Terror", "alias": "F"}
+          {"id": 3, "name": "Romance", "alias": "A"},
+          {"id": 4, "name": "Ação", "alias": "D"},
+          {"id": 5, "name": "Terror", "alias": "F"}
         ]
       },
       {
@@ -62,7 +62,7 @@
         "options":[
           {"id": 1, "name": "Sim, só canto sozinho", "alias": "G"},
           {"id": 2, "name": "Não, nunca canto", "alias": "F"},
-          {"id": 2, "name": "Canto sozinho e até em público, não ligo", "alias": "E"}
+          {"id": 3, "name": "Canto sozinho e até em público, não ligo", "alias": "E"}
         ]
       },
       {
@@ -71,9 +71,9 @@
         "options":[
           {"id": 1, "name": "Lendo um livro", "alias": "B"},
           {"id": 2, "name": "Assistindo um filme, uma série ou video-game", "alias": "G"},
-          {"id": 2, "name": "Navegando nas redes sociais", "alias": "A"},
-          {"id": 2, "name": "Conversando com os amigos", "alias": "E"},
-          {"id": 2, "name": "Fazendo coisas diferentes", "alias": "C"}
+          {"id": 3, "name": "Navegando nas redes sociais", "alias": "A"},
+          {"id": 4, "name": "Conversando com os amigos", "alias": "E"},
+          {"id": 5, "name": "Fazendo coisas diferentes", "alias": "C"}
         ]
       },
       {
@@ -82,19 +82,40 @@
         "options":[
           {"id": 1, "name": "Tenho uma ideia de onde quero estar no futuro", "alias": "C"},
           {"id": 2, "name": "Mais ou menos, tenho uns objetivos, estou seguindo a vida e fazendo as coisas com calma", "alias": "G"},
-          {"id": 2, "name": "Tracei metas específicas e sei exatamente o que quero para este e os próximos anos", "alias": "B"},
-          {"id": 2, "name": "Tenho algumas metas, mas não tenho nem prazo, parecem mais sonhos...", "alias": "C"}
+          {"id": 3, "name": "Tracei metas específicas e sei exatamente o que quero para este e os próximos anos", "alias": "B"},
+          {"id": 4, "name": "Tenho algumas metas, mas não tenho nem prazo, parecem mais sonhos...", "alias": "C"}
         ]
       }
     ],
     "results": {
-      "A": "Você provavelmente seria um Gato azul russo!",
-      "B": "Você provavelmente seria um Sphynx!",
-      "C": "Você provavelmente seria um Maine coon!",
-      "D": "Você provavelmente seria um Gato german rex ou Rex alemão!",
-      "E": "Você provavelmente seria um Gato Korat!",
-      "F": "Você provavelmente seria um Gato Bombaim!",
-      "G": "Você provavelmente seria um Ocica!t"
+      "A": {
+        "main": "Gato azul russo!",
+        "description": "Você provavelmente é uma pessoa reservada e elegante, assim como o Gato Azul Russo. Você valoriza a tranquilidade e a paz de espírito, e possui uma personalidade calma e observadora. Sua natureza curiosa e inteligente faz com que você aprecie momentos de reflexão e desfrute da sua própria companhia."
+      },
+      "B": {
+        "main": "Sphynx!",
+        "description": "Você provavelmente é uma pessoa que se destaca pela sua inteligência e perspicácia. Assim como o Sphynx, você tem um jeito único e uma personalidade cativante. Sua capacidade de se adaptar facilmente a diferentes situações e sua mente ágil fazem com que você seja uma pessoa versátil e interessante."
+      },
+      "C": {
+        "main": "Maine coon!",
+        "description": "Você provavelmente é uma pessoa de coração generoso e amigável, assim como o Maine Coon. Sua natureza afetuosa e sociável faz com que você seja uma companhia adorável para os outros. Além disso, sua personalidade confiante e independente torna você uma pessoa admirada e respeitada."
+      },
+      "D": {
+        "main": "Gato german rex/Rex alemão!",
+        "description": "Você provavelmente é uma pessoa de espírito livre e criativo. Assim como o Gato German Rex, você possui um charme peculiar e uma atitude descontraída perante a vida. Sua imaginação fértil e sua capacidade de pensar fora da caixa fazem com que você seja uma fonte constante de ideias inovadoras."
+      },
+      "E": {
+        "main": "Gato Korat!",
+        "description": "Você provavelmente é uma pessoa tranquila e serena, assim como o Gato Korat. Sua natureza pacífica e equilibrada faz com que você seja uma presença calmante para aqueles ao seu redor. Além disso, sua lealdade e sensibilidade tornam você um amigo fiel e um confidente confiável."
+      },
+      "F": {
+        "main": "Gato Bombaim!",
+        "description": "Você provavelmente é uma pessoa de personalidade marcante e carismática. Assim como o Gato Bombaim, você possui uma presença magnética e uma elegância cativante. Sua confiança e determinação fazem com que você se destaque em qualquer ambiente, e sua inteligência aguçada faz com que você seja admirado por sua perspicácia."
+      },
+      "G": {
+        "main": "Ocicat!",
+        "description": "Você provavelmente é uma pessoa aventureira e enérgica, assim como o Ocicat. Sua natureza brincalhona e extrovertida faz com que você seja o centro das atenções em qualquer situação. Sua disposição para explorar o mundo ao seu redor e sua coragem para enfrentar novos desafios tornam você uma pessoa empolgante de se estar por perto."
+      }
     }
   }
 ]

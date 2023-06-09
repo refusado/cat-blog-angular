@@ -17,7 +17,8 @@ export class QuizzComponent implements OnInit {
   currentQuestion: any;
 
   answers: string[] = [];
-  userAnswer: string = "";
+  quizAnswerMain: string = "";
+  quizAnswerDesc: string = "";
   questionMaxIndex: number = 0;
 
   questionIndex: number = 0;
@@ -68,9 +69,16 @@ export class QuizzComponent implements OnInit {
       this.finished = true;
       const result: string = await this.checkResult(this.answers);
 
-      this.userAnswer = this.quizz.results[result as keyof typeof this.quizz.results];
+      const answer: {
+        main: "",
+        description: ""
+      } = this.quizz.results[result];
+
+      this.quizAnswerMain = answer.main;
+      this.quizAnswerDesc = answer.description;
 
       console.info(this.answers);
+      console.info(result);
     }
   }
 
