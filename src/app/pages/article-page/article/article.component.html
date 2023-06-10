@@ -7,11 +7,7 @@
     <h1>{{ articleTitle }}</h1>
   </div>
   <div class="article__description">
-    <p>{{ articleContent }}</p>
-    <hr>
-    <p>{{ articleContent }}</p>
-    <br>
-    <p>{{ articleContent }}{{ articleContent }}</p>
+    <p [innerHTML]="articleContent"></p>
 
     <a [routerLink]="''" class="article__back"><< Voltar</a>
   </div>
